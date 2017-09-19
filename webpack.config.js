@@ -4,6 +4,7 @@ var path = require("path");
 var fs = require('fs'),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
     ExtractTextPlugin = require('extract-text-webpack-plugin');
+// var packCSS = new ExtractTextPlugin('./css/.css');
 module.exports = {
     entry: ['webpack/hot/dev-server', path.resolve(__dirname, './dev/entry.js')], // 要打包的入口文件
     devtool: 'source-map',
